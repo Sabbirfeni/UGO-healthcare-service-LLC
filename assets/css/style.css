@@ -333,10 +333,13 @@ Responsive design start
 
 @media only screen and (max-width: 600px) {
     .padding {
-        padding: 100px 0px;
+        padding: 50px 0px;
     }
     .hero {
         text-align: center;
+    }
+    .hero h1 {
+        margin-bottom: 20px;
     }
     .open-btn {
         top: 5px;
@@ -351,6 +354,9 @@ Responsive design start
     }
     .nav-item-container {
         width: 30%;
+    }
+    .network h3 {
+        text-align: center;
     }
   }
 /* ***************************************
