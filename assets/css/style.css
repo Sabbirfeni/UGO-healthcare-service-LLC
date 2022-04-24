@@ -1,12 +1,14 @@
 /* ***************************************
 Common style start
 ***************************************** */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 /* Logo font family link */
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
 * {
     padding: 0%;
     margin:0%;
+    font-family: 'Nunito', sans-serif;
 }
 img {
     width: 100%;
@@ -108,7 +110,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     color: #ffffff;
-    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    font-size: clamp(0.8rem, 2vw, 1rem);
     position: relative;
 }
 .nav-item-container ul li a::after {
@@ -129,7 +131,6 @@ header {
     height: 70px;
 }
 .logo-name {
-    font-family: 'Merienda', cursive;
     color: #ffffff;
     font-size: clamp(1rem, 4vw, 2.3rem);
     font-weight: bold;
