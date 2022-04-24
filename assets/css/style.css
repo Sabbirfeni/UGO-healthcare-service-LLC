@@ -83,6 +83,7 @@ header {
     padding: 15px 80px;
     /* min-height: 80px; */
     display: flex;
+    position: relative;
 }
 .logo-container {
     width: 40%;
@@ -230,7 +231,7 @@ Hero style start
     width: 100%;
     height: 100vh;
     background-color: #000000;
-    opacity: 0.6;
+    opacity: 0.4;
     top: 0%;
     left: 0%;
     z-index: -1;
@@ -265,7 +266,8 @@ Network style start
    font-size: clamp(1.5rem, 3.5vw, 3rem);
 }
 .network h3 span {
-    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    /* font-family: 'Merienda', cursive; */
 }
 /* ***************************************
 Network style end
@@ -292,7 +294,6 @@ Community style start
     border-radius: 50%;
 }
 .community h4 {
-    font-family: 'Merienda', cursive;
     color: #244c88;
 }
 
@@ -315,10 +316,10 @@ Community style end
 /* ***************************************
 Responsive design start
 ***************************************** */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 992px) {
     .open-btn {
         display: block;
-        top: 12px;
+        top: 15px;
         font-size: 30px;
     }
     .header-area {
@@ -338,8 +339,8 @@ Responsive design start
         text-align: center;
     }
     .open-btn {
-        top: 15px;
-        right: 20px;
+        top: 5px;
+        right: 15px;
         font-size: 25px;
     }
     .header-area {
