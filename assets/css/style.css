@@ -25,10 +25,10 @@ a {
     justify-content: center;
 }
 h3 {
-    font-size: clamp(1rem, 2vw, 1.9rem);
+    font-size: clamp(1rem, 1.5vw, 1.9rem);
 }
 h4 {
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-size: clamp(1.1rem, 1.5vw, 1.4rem);
 }
 p {
     font-size: clamp(0.8rem, 2vw, 1rem);
@@ -68,7 +68,7 @@ p {
     color: white;
 }
 .big-heading {
-    font-size: clamp(1.8rem, 3.5vw, 3.8rem);
+    font-size: clamp(1.8rem, 3vw, 3.8rem);
 }
 .heading {
     margin-bottom: 50px;
@@ -96,7 +96,7 @@ header {
 }
 .header-area {
     width: 100%;
-    padding: 15px 80px;
+    padding: 20px 80px;
     /* min-height: 80px; */
     display: flex;
     position: relative;
@@ -127,7 +127,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     color: #ffffff;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
     position: relative;
 }
 .nav-item-container ul li a::after {
@@ -149,7 +149,7 @@ header {
 }
 .logo-name {
     color: #ffffff;
-    font-size: clamp(1rem, 4vw, 2.3rem);
+    font-size: clamp(1rem, 1.5vw, 2.3rem);
     font-weight: bold;
 }
 
@@ -332,6 +332,24 @@ Community style end
 /* ***************************************
 Responsive design start
 ***************************************** */
+
+@media only screen and (max-width: 1200px) {
+    .logo-name {
+        padding: 0px 20px;
+    }
+    .logo-container {
+        width: 30%;
+    }
+    .nav-item-container {
+        width: 70%
+    }
+    .nav-item-container ul li {
+        margin-left: 30px;
+    }
+   
+}
+
+
 @media only screen and (max-width: 992px) {
     .open-btn {
         display: block;
