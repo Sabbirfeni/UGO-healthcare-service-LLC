@@ -11,8 +11,11 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/health-care.png">
     <!-- Css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/calendar.css">
 
     <title>Home | UGO healthcare service LLC</title>
+
+
   </head>
   <body>
 
@@ -30,7 +33,7 @@
             <div class="nav-item-container">
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="index.html">HEALTHCARE STAFFING</a></li>
+                <li><a href="staffing.html">HEALTHCARE STAFFING</a></li>
                 <li><a href="job.html">JOBS</a></li>
                 <li><a href="index.html">WHO WE ARE</a></li>
                 <li><a href="index.html"><img src="assets/images/shopping-cart.png" alt="" style="width: 25px;"></a></li>
@@ -44,8 +47,8 @@
                 <div id="mySidepanel" class="side-panel bg-color-scheme">
                     <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">×</a>
                     <a href="index.html">HOME</a>
-                    <a href="job.html">HEALTHCARE STAFFING</a>
-                    <a href="index.html">JOBS</a>
+                    <a href="staffing.html">HEALTHCARE STAFFING</a>
+                    <a href="job.html">JOBS</a>
                     <a href="index.html">WHO WE ARE</a>
                     <a href="index.html"><img src="assets/images/shopping-cart.png" alt="" style="width: 25px;"></a>
                     <a href="index.html"><img src="assets/images/user.png" alt="" style="width: 25px;"></a>
@@ -60,59 +63,71 @@
     <!--******************
     Navbar section end
     ********************* -->
-  
-  
-
-
-
+    
+    <div class="container full-height">
+        <div class="date-picker text-center d-flex align-items-center justify-content-center rounded">
+            <div>
+                <h1 class="">Select Date and Time</h1>
+                <h4 class="mt-3 mt-md-4"><input type="datetime-local" class="p-3" id="Test_DatetimeLocal"></h4>
+                <button class="button"  onclick="openContact()">Book</button>
+            </div>
+        </div>
+    </div>
+        
 
 
     
-    <!-- **************************
-    Contact section start
-    ***************************** -->
-    <div class="padding">
-     <div class="container">
-        <h1 class="color-scheme text-center mt-5">Contact Us</h1>
-         <div class="row d-flex align-items-center justify-content-center">
-             <div class="col-md-6">
-                <form>
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label color-scheme fw-bold">Name:</label>
-                      <input type="text" class="form-control" id="recipient-name">
+        <!--******************
+        Side form section Start
+        ********************* -->
+        <div id="sideContact" class="side-panel bg-color-scheme d-flex align-items-center justify-content-center text-white">
+            
+            <div class="container-fluid">
+                <a class="text-center" href="javascript:void(0)" class="close-btn text-white" style="position: relative;" onclick="closeContact()">×</a>
+                <h4 class="text-center">Add your details</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <div class="mb-3">
+                                <label for="">First Name</label><span class="text-warning">*</span>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                              </div>
+                              <div class="mb-3">
+                                <label for="">Last Name</label><span class="text-warning">*</span>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" Last Name">
+                              </div>
+                            <div class="mb-3">
+                                <label for="">Email</label><span class="text-warning">*</span>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Phone Number</label>
+                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter your phone number">
+                            </div>
+                            <!-- <div class="mb-3">
+                                <select name="cars" id="cars" class="w-100 p-2 rounded">
+                                    <option value="volvo">Country</option>
+                                    <option value="volvo">Country</option>
+                                    <option value="saab">India</option>
+                                    <option value="opel">UAE</option>
+                                    <option value="audi">England</option>
+                                    <option value="audi">America</option>
+                                    <option value="audi">Japan</option>
+                                  </select>
+                              </div> -->
+                            <div class="text-center">
+                                <button type="submit" class="btn button border">Confirm Booking</button>
+                            </div>
+                           
+                          </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label color-scheme fw-bold">Email:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label color-scheme fw-bold">Tell us more about your HR needs:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="button" class="btn bg-color-scheme text-white">Send message</button>
-                    </div>
-                    
-                </form>
-                <div class="text-center mt-4 mt-md-5">
-                    <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-                    <h3 class="mt-3 mt-md-5">Better yet, see us in person!</h3>
-                    <p>We love our professionals, so feel free to visit during normal business hours.</p>
-                    <h4>
-                        Our phone lines are open 24/7 <br>
-                        Feel free to call for jobs, shifts and schedules.
-                    </h4>
-                    <h3 class="mt-3 mt-md-5">UGO healthcare service LLC</h3>
-                    <a href="tel:+14104249408">+14104249408</a> <br><br>
                 </div>
-                
-             </div>
-         </div>
-     </div>
-    </div>
-    <!-- **************************
-    Contact section end
-    ***************************** -->
+            </div>
+        </div>
+        
+        <!--******************
+        Side form section end
+        ********************* -->
 
 
 
@@ -122,6 +137,7 @@
 
 
 
+  
     <!-- **************************
     Footer section start
     ***************************** -->
@@ -153,10 +169,9 @@
 
 
 
-
-
     <!-- JS link -->
     <script src="assets/js/script.js"></script>
+
 
     <!-- lottie animation link -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

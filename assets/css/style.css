@@ -45,6 +45,7 @@ p {
 }
 .button:hover {
     color: #ffffff;
+    background-color: #1e3f70;
   }
 .btn-icon {
     width: 25px;
@@ -190,7 +191,7 @@ side-panel css Start
     color: #f1f1f1;
   }
   
-  .side-panel .closebtn {
+  .side-panel .close-btn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -343,6 +344,7 @@ Responsive design start
     .nav-item-container {
         display: none;
     }
+    
 }
 
 
